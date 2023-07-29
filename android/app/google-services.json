@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "231672421624",
+    "project_id": "ff-social-app",
+    "storage_bucket": "ff-social-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231672421624:android:408121caed11facef9af0d",
+        "android_client_info": {
+          "package_name": "com.mycompany.socialapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231672421624-0929n3voecjvn6lpt0j96hdu0ugb6tiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbz0VyWcXz7KBAZ0QYzXPMYFFAIUHnqvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231672421624-0929n3voecjvn6lpt0j96hdu0ugb6tiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231672421624-036hnn1dh22le97n7hpip9qefar4kpjd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.socialapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231672421624:android:a5e74a6ce448bf46f9af0d",
+        "android_client_info": {
+          "package_name": "com.mycompany.socialapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231672421624-0929n3voecjvn6lpt0j96hdu0ugb6tiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbz0VyWcXz7KBAZ0QYzXPMYFFAIUHnqvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231672421624-0929n3voecjvn6lpt0j96hdu0ugb6tiu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "231672421624-036hnn1dh22le97n7hpip9qefar4kpjd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.socialapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
