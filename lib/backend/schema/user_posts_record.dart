@@ -31,10 +31,16 @@ class UserPostsRecord extends FirestoreRecord {
   DateTime? get createdTime => _createdTime;
   bool hasCreatedTime() => _createdTime != null;
 
+  // "likes" field.
+  List<String>? _likes;
+  List<String> get likes => _likes ?? const [];
+  bool hasLikes() => _likes != null;
+
   void _initializeFields() {
     _message = snapshotData['message'] as String?;
     _userEmail = snapshotData['userEmail'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
+    _likes = getDataList(snapshotData['likes']);
   }
 
   static CollectionReference get collection =>
@@ -92,14 +98,16 @@ class UserPostsRecordDocumentEquality implements Equality<UserPostsRecord> {
 
   @override
   bool equals(UserPostsRecord? e1, UserPostsRecord? e2) {
+    const listEquality = ListEquality();
     return e1?.message == e2?.message &&
         e1?.userEmail == e2?.userEmail &&
-        e1?.createdTime == e2?.createdTime;
+        e1?.createdTime == e2?.createdTime &&
+        listEquality.equals(e1?.likes, e2?.likes);
   }
 
   @override
-  int hash(UserPostsRecord? e) =>
-      const ListEquality().hash([e?.message, e?.userEmail, e?.createdTime]);
+  int hash(UserPostsRecord? e) => const ListEquality()
+      .hash([e?.message, e?.userEmail, e?.createdTime, e?.likes]);
 
   @override
   bool isValidKey(Object? o) => o is UserPostsRecord;

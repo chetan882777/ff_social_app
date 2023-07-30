@@ -100,6 +100,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Register',
           path: '/register',
           builder: (context, params) => RegisterWidget(),
+        ),
+        FFRoute(
+          name: 'MyPosts',
+          path: '/myPosts',
+          builder: (context, params) => MyPostsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
